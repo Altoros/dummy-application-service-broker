@@ -1,0 +1,9 @@
+---
+applications:
+- name: dummy-application-service-broker
+  memory: 128M
+  instances: 1
+  buildpack: https://github.com/cloudfoundry/go-buildpack.git
+  command: dummy-application-service-broker
+  env:
+    GOPACKAGENAME: dummy-application-service-broker
